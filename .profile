@@ -1,0 +1,1 @@
+@eexport PATH=/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/Users/gbarrs/.gem/ruby/1.8/bin:/Users/gbarrs/.gem/ruby/1.8/bin
