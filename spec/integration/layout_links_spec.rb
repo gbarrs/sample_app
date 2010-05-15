@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'webrat'
 
 describe "Layout links" do
   it "should have a Home page at '/'" do
@@ -24,6 +25,20 @@ describe "Layout links" do
   it "should have a signup page at '/signup'" do
     get '/signup'
     response.should render_template('users/new')
+  end
+
+  it "should have the right links on the layout" do
+    visit root_path
+    click_link "About"
+    response.should render_template('pages/about')
+    click_link "Help"
+    response.should # fill in
+    click_link "Contact"
+    response.should # fill in
+    click_link "Home"
+    response.should # fill in
+    click_link "Sign up now!"
+    response.should # fill in
   end
 
 end

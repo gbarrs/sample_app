@@ -1,4 +1,9 @@
 require 'spec_helper'
+require 'webrat'
+
+Webrat.configure do |config|
+  config.mode = :rails
+end
 
 describe UsersHelper do
 
